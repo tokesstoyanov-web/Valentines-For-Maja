@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 🤍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="hearts"></canvas>
+
+
+<div class="container">
+
+  <section class="active" id="landing">
+    <h1>Hi my love 🤍</h1>
+    <p>I made you something again.</p>
+    <p>It's a little different this time.</p>
+    <button class="primary" onclick="next()">Okay, I'm curious</button>
+  </section>
+
+  <section id="mood">
+    <h1>Choose your mood</h1>
+    <div class="btn-group">
+      <button onclick="showMood('reassure')">💗 I need reassurance</button>
+      <button onclick="showMood('chaos')">😈 I want chaos</button>
+      <button onclick="showMood('emotional')">🥺 I'm emotional</button>
+    </div>
+    <p id="moodText" class="fade-text"></p>
+    <button class="primary" onclick="next()">Continue</button>
+  </section>
+
+  <section id="cards">
+    <h1>Click slowly 👀</h1>
+    <div class="card-grid">
+      <div class="card" onclick="flip(this, 0)">Click me</div>
+      <div class="card" onclick="flip(this, 1)">Click me</div>
+      <div class="card" onclick="flip(this, 2)">Click me</div>
+      <div class="card" onclick="flip(this, 3)">Click me</div>
+    </div>
+    <button class="primary" onclick="next()">One more thing</button>
+  </section>
+
+  <section id="question">
+    <h1>Do you love me?</h1>
+    <div class="btn-group">
+      <button onclick="answer()">Yes</button>
+      <button onclick="answer()">Yes but louder</button>
+    </div>
+    <p id="answerText" class="fade-text"></p>
+  </section>
+
+  <section id="counter">
+  <h1>We've been choosing each other for:</h1>
+  <p id="timeTogether" class="big-counter"></p>
+  <button class="primary" onclick="next()">And I'm not done.</button>
+</section>
+
+
+  <section id="final">
+    <h1>Happy Valentine's Day 🤍</h1>
+    <p>
+      No matter how many things I make for you—  
+      you're still my favorite thing to come home to and always my inspiration.
+    </p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
